@@ -1,4 +1,5 @@
-php /var/www/pterodactyl/artisan down
+cd /var/www/pterodactyl
+php artisan down
 cd /var/www/pterodactyl/resources/scripts
 rm -rf main.css
 echo "@import url('https://raw.githubusercontent.com/kokosnica/v2/main/user.css')" >> /var/www/pterodactyl/resources/scripts/main.css
