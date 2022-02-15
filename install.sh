@@ -7,7 +7,6 @@ wget https://raw.githubusercontent.com/kokosnica/v2/main/index.tsx
 cd ../..
 php artisan view:clear
 php artisan cache:clear
-clear
 echo "User panel theme has been added."
 echo "Installing admin theme..."
 npm install yarn -g
@@ -19,5 +18,4 @@ cd ../../..
 php /var/www/pterodactyl/artisan up
 php /var/www/pterodactyl/artisan view:clear
 php /var/www/pterodactyl/artisan cache:clear
-clear
 echo "Admin theme install complete, Make sure to shift + refresh your page!"
