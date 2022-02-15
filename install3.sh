@@ -13,9 +13,10 @@ npm install yarn -g
 yarn install
 yarn add @emotion/react
 rm -rf /var/www/pterodactyl/resources/scripts/hoc/requireServerPermission.tsx
-yarn build:production
 cd ../../..
 php /var/www/pterodactyl/artisan up
 php /var/www/pterodactyl/artisan view:clear
 php /var/www/pterodactyl/artisan cache:clear
+cd /var/www/pterodactyl
+yarn build:production
 echo "Admin theme install complete, Make sure to shift + refresh your page!"
