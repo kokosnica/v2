@@ -1,18 +1,15 @@
 php /var/www/pterodactyl/artisan down
 cd /var/www/pterodactyl/resources/scripts
 rm -rf main.css
-echo "@import url('https://www.kmntmc.tk/123/user.css')" >> /var/www/pterodactyl/resources/scripts/main.css
+echo "@import url('https://raw.githubusercontent.com/kokosnica/v2/main/user.css')" >> /var/www/pterodactyl/resources/scripts/main.css
 rm -rf index.tsx
-wget https://raw.githubusercontent.com/DeveloperNeon/ptero-1.0-theme-install/main/resources/index.tsx
+wget https://raw.githubusercontent.com/kokosnica/v2/main/index.tsx
 cd ../..
 php artisan view:clear
 php artisan cache:clear
 clear
 echo "User panel theme has been added."
 echo "Installing admin theme..."
-cd /var/www/pterodactyl/resources/views/layouts/
-rm -rf admin.blade.php
-wget https://raw.githubusercontent.com/DeveloperNeon/ptero-1.0-theme-install/main/resources/dracula/admin.blade.php
 npm install yarn -g
 yarn install
 yarn add @emotion/react
