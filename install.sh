@@ -5,7 +5,7 @@ rm -rf main.css
 echo "@import url('https://raw.githubusercontent.com/kokosnica/v2/main/user.css')" >> /var/www/pterodactyl/resources/scripts/main.css
 rm -rf index.tsx
 wget https://raw.githubusercontent.com/kokosnica/v2/main/index.tsx
-cd ../..
+cd /var/www/pterodactyl
 php artisan view:clear
 php artisan cache:clear
 clear
@@ -16,7 +16,7 @@ yarn install
 yarn add @emotion/react
 rm -rf /var/www/pterodactyl/resources/scripts/hoc/requireServerPermission.tsx
 yarn build:production
-cd var/www/pterodactyl
+cd /var/www/pterodactyl
 php artisan up
 php artisan view:clear
 php artisan cache:clear
