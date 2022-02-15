@@ -16,9 +16,9 @@ yarn install
 yarn add @emotion/react
 rm -rf /var/www/pterodactyl/resources/scripts/hoc/requireServerPermission.tsx
 yarn build:production
-cd ../../..
-php /var/www/pterodactyl/artisan up
-php /var/www/pterodactyl/artisan view:clear
-php /var/www/pterodactyl/artisan cache:clear
+cd var/www/pterodactyl
+php artisan up
+php artisan view:clear
+php artisan cache:clear
 clear
 echo "Panel build finished. Make sure to shift + refresh your page!"
